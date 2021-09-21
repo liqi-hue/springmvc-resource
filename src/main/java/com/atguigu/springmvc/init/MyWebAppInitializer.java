@@ -1,5 +1,6 @@
-package com.atguigu.springmvc.config;
+package com.atguigu.springmvc.init;
 
+import com.atguigu.springmvc.config.AppConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -13,9 +14,9 @@ import javax.servlet.ServletRegistration;
  * @create 2021-09-20 8:02 PM
  */
 
-public class MyWebAppInitializer implements WebApplicationInitializer {
+public class MyWebAppInitializer /*implements WebApplicationInitializer*/ {
 
-    @Override
+//    @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         // 创建Web容器
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
