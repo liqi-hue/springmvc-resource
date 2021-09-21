@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * @create 2021-09-20 8:05 PM
  */
 @ComponentScan({"com.atguigu.springmvc.controller"})
-//@Configuration
+@Configuration
 public class AppConfig {
 
 }
